@@ -10,6 +10,8 @@
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
     <link rel="stylesheet" href="css/master.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -22,10 +24,11 @@
                 </button>
             </section>
             <section class="collapse navbar-collapse" id="myNavbar">
+                <span class="sHeaderName">Guadalupe Rodriguez Gonzalez</span>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#logo">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li> 
+                    <li><a href="#portfolio">Skills</a></li> 
                     <li><a href="#contact-me">Contact</a></li> 
                 </ul>
             </section>
@@ -53,7 +56,6 @@
                 <section class="skill"> Agile </section>
                 <section class="skill"> Kanban </section>
                 <section class="skill"> JIRA </section>
-                <section class="skill"> Project management </section> 
                 <section class="skill"> Confluence </section> 
             </section> 
             <section class="row text-center fontana">
@@ -77,20 +79,25 @@
         </section>
         <section id="contact-me" class="contact">
             <section class="content">
-                <section class="row">
                     <section id="contact-me">
-                        <h2>Contact Me at:</h2>
+                        <h2>CONTACT ME</h2>
                     </section>
-                <section>
-                    </br></br>
-                <section class="row clsContacts">
-                    <section class="clCtc"><img src="img/2021 Twitter logo - white.png" class="imgTwitter"></section>
-                    <section class="clCtc"><img src="img/linkedin-icon-18-256.png" class="imgLinked"></section>
-                    <section class="clCtc"><img src="img/GitHub_Logo_White.png" class="imgGitHub"></section>
-                    <section class="clCtc"><img src="img/email-icon-light-blue.png" class="imgMail"></section>
-                    <section class="clCtc"><img src="img/whatsapp.svg" class="imgWhatsapp"></section>
+                    <section class="contactForm" >
+                        <form class="form" action="#">
+                            <p type="Name*:"><input placeholder="Write your name here.." id="idName"></input></p>
+                            <p type="Email*:"><input placeholder="Let us know how to contact you back.." id="idEmail"></input></p>
+                            <p type="Message*:"><input placeholder="What would you like to tell us.." id="idMessage"></input></p>
+                            <button onclick="sendEmail()">Send Message</button>
+                          </form>
                     </section>
-                </section>
+                    <section class="row clsContacts">
+                        <section class="clCtc"><img src="img/2021 Twitter logo - white.png" class="imgTwitter"></section>
+                        <section class="clCtc"><img src="img/linkedin-icon-18-256.png" class="imgLinked"></section>
+                        <section class="clCtc"><img src="img/GitHub_Logo_White.png" class="imgGitHub"></section>
+                        <section class="clCtc"><img src="img/email-icon-light-blue.png" class="imgMail"></section>
+                        <section class="clCtc"><img src="img/whatsapp.svg" class="imgWhatsapp"></section>
+                        </br></br><span class="sFooterName">Guadalupe Rodriguez Gonzalez</span>
+                    </section>
                 </br></br>
             </section>
         </section>

@@ -11,6 +11,20 @@ body {
     vertical-align: middle;
   }
   
+  .sHeaderName {
+    border: #0F4C81 0px groove;
+    margin-left: 50px;
+    margin-top: 15px;
+    float: left;
+    font-weight: bold;
+  }
+
+  .sFooterName {
+    border: #EFEFEF 0px groove;
+    width: 800px;
+    
+  }
+
   .navbar {
     background-color: rgba(255, 255, 255, .90)
   }
@@ -94,6 +108,7 @@ body {
   .content {
     max-width: 900px;
     margin: 0 auto;
+    border: #B0C4DE 0px solid;
   }
   
   .contact {
@@ -191,6 +206,54 @@ body {
     padding-bottom: 15px;
   }
   
+  .contactForm {
+    padding-left: 20px;
+    border: cyan 0px solid;
+    height: 440px;
+  }
+
+  .form{
+    width:340px;
+    height:380px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin: auto;
+    padding:20px 30px;max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+  }
+
+  input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;font-family:'Montserrat',sans-serif;transition:all .3s;
+    border-bottom:2px solid #bebed2;
+    color:rgb(10, 102, 194);
+  }
+
+  input:focus{
+    border-bottom:2px solid #78788c;
+  }
+  p:before{
+    content:attr(type);
+    display:block;margin:28px 0 0;
+    font-size:14px;color:#5a5a5a;
+  }
+  button{
+    float:right;padding:8px 12px;margin:8px 0 0;font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;background:0;color:#5a5a6e;cursor:pointer;transition:all .3s;
+  }
+  button:hover{
+    background:#78788c;color:#fff;
+  }
+  
+
   footer {
     text-align: center;
     color: #252525;
@@ -208,6 +271,8 @@ body {
   #footer-links li:nth-child(4) {
     border-right: none;
   }
+
+  
   
   .imgTwitter {
     width: 45px;
