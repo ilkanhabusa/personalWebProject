@@ -83,11 +83,11 @@
                         <h2>CONTACT ME</h2>
                     </section>
                     <section class="contactForm" >
-                        <form class="form" action="#">
+                        <form class="form" action="#" onsubmit="sendEmail(); reset(); return false;">
                             <p type="Name*:"><input placeholder="Write your name here.." id="idName"></input></p>
                             <p type="Email*:"><input placeholder="Let us know how to contact you back.." id="idEmail"></input></p>
                             <p type="Message*:"><input placeholder="What would you like to tell us.." id="idMessage"></input></p>
-                            <button onclick="sendEmail()">Send Message</button>
+                            <button type="submit">Send Message</button>
                           </form>
                     </section>
                     <section class="row clsContacts">

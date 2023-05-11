@@ -1,17 +1,20 @@
 function sendEmail() { 
     let name = document.getElementById("idName").value;
     let email = document.getElementById("idEmail").value;
-    let message = document.getElementById("idMessage").value;
-    let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Message : ${message} <br>`;
+    let themessage = document.getElementById("idMessage").value;
+    let finalmessage = "Name : "+ name + " <br>  Email : "+ email + " <br>  Message : " + themessage + "<br>";
 
-   //alert(finalmessage);  
    Email.send({  
-        SecureToken : "c7be8369-488c-475a-892e-0e8264b24a84",
-        To : 'famherrod.sat@gmail.com',
-        From : "famherrod.sat@gmail.com",
+        SecureToken : "7a7c3be8-27ca-452a-9de5-276940b319d4",
+        To : "ilkanhabusa@gmail.com",
+        From : "ilkanhabusa@gmail.com",
         Subject : "New email from your personal web site",
         Body : finalmessage
     }).then(
-    message => alert(message)
+        message => alert(message)
     );
+    
+    
+
+
 }
